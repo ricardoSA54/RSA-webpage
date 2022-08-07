@@ -1,7 +1,7 @@
 //event listener to allow DOM to load. Not always necessary.
 //document.addEventListener('DOMContentLoaded',function() {
     //change masthead text color by accessing first (only) object of that class
-    //document.getElementsByClassName("masthead")[0].style.color = "#0000ff";
+    //document.getElementsByClassName("masthead")[0].style.backgroundColor = "#00ffff";
 
     //Changing mashead background
     //Changing style of pseudo element requires a different approach

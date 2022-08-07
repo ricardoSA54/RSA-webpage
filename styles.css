@@ -3,6 +3,10 @@ body, html, .page {
     margin: 0;
   }
 
+.banner{
+    text-decoration: none;
+    color: #303030;
+}
 
 .navbar{
     justify-content: space-around;
@@ -18,7 +22,7 @@ body, html, .page {
     font-weight: bold;
 }
 
-a{
+.navbar a, .discrete_link {
     text-decoration: none;
     color: #606060;
 }
@@ -65,25 +69,26 @@ a:hover{
 }
 
 
-.content{
+.content {
     position: relative;
     width:100%;
     height: 100%;
 }
+
 
 .content::before{
     /* The image used */
     /*  background-color: #000000; */
     content: "";
     background-image: url("https://img.freepik.com/free-photo/white-texture_1160-786.jpg?w=2000");
-    opacity: 0.1;
+    opacity: 0.5;
     z-index: -1;
     /* Full height */
+    width:100%;
     height: 100%;
     /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center center;
+    background-blend-mode: color;
     position: absolute;
     top: 0px;
     right: 0px;
@@ -91,7 +96,64 @@ a:hover{
     left: 0px;
   }
 
-  .cv{
+  .cv , .about_me, .homepage, .research{
     width: 80%;
-    padding-left:10%;
+    padding-bottom: 50px;
+    padding-top: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
+
+
+  footer{
+    position: fixed;
+    bottom:0px;
+    height:30px;
+    width:100%;
+    background: #f7f5e7;
+    z-index: 1;
+    justify-content: space-around;
+  }
+
+
+footer > ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+figure{
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    padding: 5%;
+}
+
+.science_image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+
+#carouselExampleIndicators{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
