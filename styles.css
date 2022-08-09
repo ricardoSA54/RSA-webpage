@@ -1,3 +1,14 @@
+/* @import url("assets/fonts/Noto_Sans_Mono.zip"); quick and dirty way to import a font */
+
+@font-face {
+    font-family: "font-1";
+    src: url("assets/fonts/Noto_Sans_Mono/static/NotoSansMono/NotoSansMono-Regular.ttf");
+}
+
+body {  
+    font-family: "font-1";
+}
+
 body, html, .page {
     height: 100%;
     margin: 0;
@@ -6,6 +17,13 @@ body, html, .page {
 .banner{
     text-decoration: none;
     color: #303030;
+    /* text-transform: uppercase; */
+}
+
+.banner h1{
+    letter-spacing: 2px;
+    margin-left: 2rem;
+    text-shadow:2px 2px 1px #b2b1b1;
 }
 
 .navbar{
@@ -44,7 +62,7 @@ a:hover{
 .masthead::before{
     content: "";
     background-color: #f7f5e7;
-    background-image: url('images/droso_1.png');
+    background-image: url('assets/images/droso_1.png');
     background-size: cover;
     position: absolute;
     top: 0px;
@@ -103,6 +121,7 @@ a:hover{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
   }
 
 
@@ -149,6 +168,23 @@ figcaption {
     margin-left: auto;
     margin-right: auto;
     width: 40%;
+}
+
+.about_me{
+    display:flex;
+    width:100%;
+    padding-left:50px;
+}
+
+.about_me_text{
+    width: 100%;
+    margin-top: 70px;
+}
+
+.portrait_rsa{
+width:40%;
+display: flex;
+margin: 0px;
 }
 
 
