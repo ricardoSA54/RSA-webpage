@@ -41,9 +41,13 @@ body, html, .page {
 }
 
 .banner h1{
-    letter-spacing: 2px;
+    letter-spacing: 5px;
     margin-left: 2rem;
     text-shadow:2px 2px 1px #b2b1b1;
+}
+
+.banner h2{
+    visibility: hidden;
 }
 
 .navbar{
