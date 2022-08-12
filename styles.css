@@ -1,4 +1,5 @@
 /* @import url("assets/fonts/Noto_Sans_Mono.zip"); quick and dirty way to import a font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 @font-face {
     font-family: "font-1";
@@ -7,12 +8,31 @@
 
 * {  /* asterisk(*) refers to all  */
     font-family: "font-1";
+    font-family: "Noto Sans";
 }
 
 body, html, .page {
     height: auto; /* fills up whole page, instead of 100% */
     margin: 0;
   }
+
+.masthead{
+    position: relative;
+    width:100%;
+}
+
+.masthead::before{
+    content: "";
+    background-image: linear-gradient(to right, rgba(242, 242, 217, 0.99), rgba(247, 245, 231, 0.3)), url('assets/images/droso_1.png');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.9;
+    z-index: -1;
+}
 
 .banner{
     text-decoration: none;
@@ -40,37 +60,10 @@ body, html, .page {
     font-weight: bold;
 }
 
-.navbar a, .discrete_link {
-    text-decoration: none;
-    color: #606060;
-}
-
-a:hover{
-    color: #000000;
-}
-
 /*   .navbar li:not(:last-child):after {
     content: '|';
     margin: 0 5px;
 } */
-
-.masthead{
-    position: relative;
-    width:100%;
-}
-
-.masthead::before{
-    content: "";
-    background-image: linear-gradient(to right, rgba(242, 242, 217, 0.99), rgba(247, 245, 231, 0.3)), url('assets/images/droso_1.png');
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.9;
-    z-index: -1;
-}
 
 .navbar::before{
     content: "";
@@ -85,13 +78,20 @@ a:hover{
     z-index: -1;
 }
 
+.navbar a, .discrete_link {
+    text-decoration: none;
+    color: #606060;
+}
+
+a:hover{
+    color: #000000;
+}
 
 .content {
     position: relative;
     width:100%;
     height: 100%;
 }
-
 
 .content::before{
     /* The image used */
@@ -113,7 +113,7 @@ a:hover{
     left: 0px;
   }
 
-  .cv , .about_me, .homepage, .research{
+.cv , .about_me, .homepage, .research{
     width: 80%;
     padding-bottom: 50px;
     padding-top: 25px;
@@ -145,6 +145,7 @@ footer > ul{
     width: 80%;
     margin: auto;
 }
+
 figure{
     position: relative;
     display: flex;
@@ -187,15 +188,11 @@ display: flex;
 margin: 0px;
 }
 
-
 #carouselExampleIndicators{
     width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
-
-
-
 
 
 
