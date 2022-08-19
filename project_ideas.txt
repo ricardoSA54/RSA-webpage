@@ -1,0 +1,5 @@
+Ideas for project for portofolio:
+
+IMDB for painting
+movie data analysis website
+Multi-lingual chrome extension
